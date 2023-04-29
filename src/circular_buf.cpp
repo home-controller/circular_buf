@@ -1,4 +1,10 @@
-typedef struct {
+/**
+ * @brief This is no longer used as moved all to the header file the typedefs are all part of the class.
+ * 
+ */
+
+/*
+ typedef struct {
     uint8_t * const buffer;
     int head;
     int tail;
@@ -51,3 +57,4 @@ void circular_buf::push(byte x)// if used in a interrupt should inline so no int
     _BufLen++;
   }
 }
+ */
