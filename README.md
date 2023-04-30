@@ -2,9 +2,9 @@
 
 Simple circular buffer, buffer size can only be a power of 2 so a bit mask can be used to wrap back to the first element with no math.
 
-## All the circular buffer code in the the header file at: ./src/circular_buf.h
+## All the circular buffer code is in the the header file at: ./src/circular_buf.h
 
-A lot of the reset is me trying out unit testing and github CI/CD. Although I only got as far as getting make test working. And the Docker and github part I didn't get any further than copy and pasting some files I thought might make a starting point.
+A lot of the rest is me trying out unit testing and github CI/CD. Although I only got as far as getting make test working. For the Docker and github part, I didn't get any further than copy and pasting some files I thought might make a starting point.
 
 ## All this extra testing etc. code is here because this is a very simple lib and is all C/C++ code that can run and be tested on any computer without needing any specifics hardware like most of my code for the Arduino, RP2040 etc, would
 
