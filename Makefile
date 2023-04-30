@@ -27,14 +27,14 @@ CXXFLAGS += -Wall -std=c++11
 LDFLAGS += 
 
 # Generate names for output object files (*.o)
-CPP_OBJECTS = $(patsubst %.cpp, $(BUILD_DIR)/%.o, $(CPP_SOURCES))
+CPP_OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(CPP_SOURCES))
 
 # Default rule: build application
 .PHONY: all
 all: $(NAME)
 
 # Build components
-$(BUILD_DIR)/%.o: %.cpp
+$(BUILD_DIR)/%.o : $(SRC_DIR)/%.cpp | $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Build the target application
@@ -45,7 +45,11 @@ $(NAME): $(CPP_OBJECTS)
 # Remove compiled object files
 .PHONY: clean
 clean:
-	rm -f $(CPP_OBJECTS)
+	rm -rf $(BUILD_DIR)
+
+# Create build directory
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
 
 # Run tests
 .PHONY: test
