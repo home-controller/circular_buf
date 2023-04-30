@@ -7,6 +7,13 @@
 	"settings": {
 		"files.associations": {
 			"cstddef": "cpp"
-		}
+		},
+		"makefile.launchConfigurations": [
+			{
+				"cwd": "/home/jmnc2/doc/src/Arduino/libraries/circular_buf/build",
+				"binaryPath": "/home/jmnc2/doc/src/Arduino/libraries/circular_buf/build/app.elf",
+				"binaryArgs": []
+			}
+		]
 	}
 }

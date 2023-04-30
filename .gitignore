@@ -3,7 +3,9 @@
 *.obj
 *.out
 *.elf
+*.a
 
 # CppUTest framework
-cpputest/
+#cpputest/
+objs/
 *.tar.gz
