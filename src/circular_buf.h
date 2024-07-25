@@ -31,7 +31,7 @@
 #ifndef _circular_buf_h
 #define _circular_buf_h
 
-// #include <Arduino.h>
+#include <Arduino.h>
 
 // using byte = std::uint8_t;
 typedef uint8_t byte;
